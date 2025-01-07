@@ -1,0 +1,56 @@
+html{
+    background-color: rgb(71, 71, 71);
+    font-family: "Fira Code";
+}
+
+a{
+    color: rgb(0, 250, 196);
+}
+button{
+    background-color: rgb(48, 48, 48);
+    color: rgb(252, 252, 252);
+    border: 3px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px 10px;
+    font-family: "Fira Code";
+}
+
+@keyframes scaleup {
+    from{
+        transform: scale(1.0);
+    }
+
+    to{
+        transform: scale(1.1);
+    }
+}
+@keyframes scaledown {
+    from{
+        transform: scale(1.1);
+    }
+
+    to{
+        transform: scale(1.0);
+    }
+}
+
+button:hover {
+    animation: scaleup 500ms;
+    transform: scale(1.1);
+}
+
+button:not(:hover){
+    animation: scaledown 500ms;
+    transform: scale(1.0);
+}
+
+img:hover{
+    animation: scaleup 500ms;
+    transform: scale(1.1);
+}
+
+img:not(:hover){
+    animation: scaledown 500ms;
+    transform: scale(1.0);
+}
